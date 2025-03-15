@@ -1,0 +1,74 @@
+[
+    {
+      "name": "Bread Sticks",
+      "description": "Delicious oven - baked sticks. Served with BBQ Sauce",
+      "price": "46 L.E",
+      "image": "https://www.papajohnsegypt.com/images/Products/Bread-Sticks.jpg"
+    },
+    {
+      "name": "Cheesy Bread Sticks",
+      "description": "Delicious oven - baked sticks. Served with BBQ Sauce",
+      "price": "76 L.E",
+      "image": "https://www.papajohnsegypt.com/images/Products/cheesey-breadsticks.jpg"
+    },
+    {
+      "name": "Cheese Sticks",
+      "description": "Fresh Papa John`s dough with a blend of Garlic Sauce and Mozzarella cheese",
+      "price": "101 L.E",
+      "image": "https://www.papajohnsegypt.com/images/Products/Cheese-Sticks.jpg"
+    },
+    {
+      "name": "Potato Wedges",
+      "description": "Seasoned potato wedges. and Mozzarella cheese",
+      "price": "79 L.E",
+      "image": "https://www.papajohnsegypt.com/images/Products/Potato-Wedges-2.jpg"
+    },
+    {
+      "name": "Pepperoni Ranch Rolls",
+      "description": "8 Rolls stuffed with Pepperoni, Jalapeno",
+      "price": "155 L.E",
+      "image": "https://www.papajohnsegypt.com/images/Products/Spicy-Pepperoni-Ranch-Rolls-item.jpg"
+    },
+    {
+      "name": "Pepperoni Rolls",
+      "description": "Pepperoni Rolls Served with Ranch Sauce",
+      "price": "155 L.E",
+      "image": "https://www.papajohnsegypt.com/images/Products/Pepperoni-Rolls.jpg"
+    },
+    {
+      "name": "Chicken Ranch Rolls",
+      "description": "Ranch Rolls Served with Ranch Sauce",
+      "price": "155 L.E",
+      "image": "https://www.papajohnsegypt.com/images/Products/Chicken-Ranch-Roll-WS.jpg"
+    },
+    {
+      "name": "3 Cheese Rolls",
+      "description": "Cheese Rolls erved with Cheese Sauce",
+      "price": "155 L.E",
+      "image": "https://www.papajohnsegypt.com/images/Products/3-Cheese-Roll-WS.jpg"
+    },
+    {
+      "name": "Grilled Chicken Wings",
+      "description": "Savory wings baked to the bone served with barbeque sauce",
+      "price": "119 L.E (6 pcs), 198 L.E (10 pcs)",
+      "image": "https://www.papajohnsegypt.com/images/Products/Grilled-Chicken-Wings.jpg"
+    },
+    {
+      "name": "Spicy Chicken Wings",
+      "description": "Savory wings baked to the bone served with barbeque sauce",
+      "price": "119 L.E (6 pcs), 198 L.E (10 pcs)",
+      "image": "https://www.papajohnsegypt.com/images/Products/Spicy-Chicken-Wings.jpg"
+    },
+    {
+      "name": "BBQ Chicken Wings",
+      "description": "Savory wings baked to the bone served with barbeque sauce",
+      "price": "119 L.E (6 pcs), 198 L.E (10 pcs)",
+      "image": "https://www.papajohnsegypt.com/images/Products/Chicken-Wings.jpg"
+    },
+    {
+      "name": "Chicken Poppers",
+      "description": "9 pieces of Tender all-white chicken breasts, breaded and oven baked",
+      "price": "178 L.E",
+      "image": "https://www.papajohnsegypt.com/images/Products/Chicken-Poppers.jpg"
+    }
+  ]

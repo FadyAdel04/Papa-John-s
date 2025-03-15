@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css link -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/checkout.css">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Papa John's Checkout</title>
+    <style>
+        /* Custom toast positioning */
+        .toast-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1050;
+            /* Ensure it's above other elements */
+        }
+
+        .toast {
+            width: 300px;
+            /* Adjust width as needed */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="topnav">
+            <img src="../imgs/number.png" alt="num">
+            <ul>
+                <li><a href="#" data-translate="CAREERS">CAREERS</a></li>
+                <li><a href="customer.html" data-translate="CONTACTS">CONTACTS</a></li>
+            </ul>
+            <img src="../imgs/arabic.png" alt="arabic" id="language-toggle">
+        </nav>
+        <nav class="subnav">
+            <a href="../index.html">
+                <img src="../imgs/logo.png" alt="logo" class="logo" id="main-logo">
+            </a>
+            <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
+            <ul id="menu">
+                <li><a href="../index.html" data-translate="HOME">HOME</a></li>
+                <li class="dropdown">
+                    <a href="#" data-translate="Menu">Menu &#x25BC;</a>
+                    <ul class="submenu">
+                        <li><a href="../pages/promotions.html" data-translate="PROMOTIONS">PROMOTIONS</a></li>
+                        <li><a href="../pages/pizzas.html" data-translate="PIZZAS">PIZZAS</a></li>
+                        <li><a href="../pages/appetizers.html" data-translate="APPETIZERS">APPETIZERS</a></li>
+                    </ul>
+                </li>
+                <li><a href="qulaity.html" data-translate="Quality">Quality</a></li>
+                <li><a href="customer.html" data-translate="Customer Service">Customer Service</a></li>
+            </ul>
+            <div class="icons">
+                <a href="../pages/cart.html" class="cart-icon position-relative">
+                    <i class="fa-solid fa-cart-shopping fa-xl"></i>
+                    <span id="cart-count"
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+                        0 <!-- Default value -->
+                    </span>
+                </a>
+                <a href="../profile/profile.html" class="profile-icon"><i class="fa-regular fa-user fa-xl"></i></a>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <!-- Checkout Content -->
+    <div class="checkout-container">
+        <div class="row">
+            <!-- Left Column: Form Section -->
+            <div class="col-md-7 form-section">
+                <h2 data-translate="Delivery Details">Delivery Details</h2>
+                <form id="deliveryDetailsForm">
+                    <div class="form-group">
+                        <label for="fullName" data-translate="Full Name">Full Name</label>
+                        <input type="text" id="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" data-translate="Phone Number">Phone Number</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address" data-translate="Address">Address</label>
+                        <input type="text" id="address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="paymentMethod" data-translate="Payment Method">Payment Method</label>
+                        <select id="paymentMethod" required>
+                            <option value="cash" data-translate="Cash on Delivery">Cash on Delivery</option>
+                            <option value="creditCard" data-translate="Credit Card">Credit Card</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes" data-translate="Additional Notes">Additional Notes</label>
+                        <textarea id="notes"></textarea>
+                    </div>
+                    <button type="submit" class="btn-checkout" data-translate="Place Order">Place Order</button>
+                </form>
+            </div>
+
+            <!-- Right Column: Order Summary -->
+            <div class="col-md-5 order-summary-section">
+                <h2 data-translate="Order Summary">Order Summary</h2>
+                <div class="order-summary">
+                    <div id="order-summary-items">
+                        <!-- Order items will be dynamically inserted here -->
+                    </div>
+                    <div class="order-summary-total">
+                        <p data-translate="Total">Total: <span id="order-total">EGP 0</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer text-white text-center py-4">
+        <div class="container">
+            <!-- Top Navigation Links -->
+            <div class="row">
+                <div class="col-12">
+                    <ul class="footer-links list-inline">
+                        <li class="list-inline-item"><a href="promotions.html"
+                                data-translate="PROMOTIONS">PROMOTIONS</a></li>
+                        <li class="list-inline-item"><a href="pizzas.html" data-translate="PIZZAS">PIZZAS</a></li>
+                        <li class="list-inline-item"><a href="appetizers.html"
+                                data-translate="APPETIZERS">APPETIZERS</a></li>
+                    </ul>
+                    <ul class="footer-links list-inline">
+                        <li class="list-inline-item"><a href="../index.html" data-translate="HOME">HOME</a></li>
+                        <li class="list-inline-item"><a href="qulaity.html" data-translate="QUALITY">QUALITY</a></li>
+                        <li class="list-inline-item"><a href="#" data-translate="BRANCHES">BRANCHES</a></li>
+                        <li class="list-inline-item"><a href="#" data-translate="CAREERS">CAREERS</a></li>
+                        <li class="list-inline-item"><a href="customer.html" data-translate="CUSTOMER SERVICE">CUSTOMER
+                                SERVICE</a></li>
+                        <li class="list-inline-item"><a href="customer.html" data-translate="CONTACTS">CONTACTS</a></li>
+                        <li class="list-inline-item"><a href="customer.html" data-translate="PRIVACY POLICY">PRIVACY
+                                POLICY</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Social Media Icons -->
+            <div class="social-icons my-3">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <!-- Copyright and Development Credit -->
+            <div class="footer-text">
+                <p class="mb-1" data-translate="© 2025 Papa John's Egypt">© 2025 Papa John's Egypt</p>
+                <p data-translate="Web Development by">Web Development by </p>
+                <a href="https://fadyadel-fady-adels-projects.vercel.app/" class="text-white">Fady Adel</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive"
+        aria-atomic="true" style="position: fixed; bottom: 20px; right: 20px;">
+        <div class="d-flex">
+            <div class="toast-body">
+                <span id="toast-message"></span>
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                aria-label="Close"></button>
+        </div>
+    </div>
+
+    <!-- bootstrap links -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- FontAwesome for Icons -->
+    <script src="https://kit.fontawesome.com/858c0c4340.js" crossorigin="anonymous"></script>
+    <script>
+        // Function to display the order summary
+        function displayOrderSummary() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const orderSummaryContainer = document.getElementById('order-summary-items');
+            const orderTotalElement = document.getElementById('order-total');
+            let subtotal = 0;
+
+            if (cart.length === 0) {
+                orderSummaryContainer.innerHTML = '<p data-translate="Your cart is empty">Your cart is empty.</p>';
+                orderTotalElement.textContent = 'EGP 0';
+                return;
+            }
+
+            // Generate the order summary HTML
+            orderSummaryContainer.innerHTML = cart.map((item, index) => {
+                const price = parseFloat(item.price.replace('EGP ', ''));
+                const itemTotal = price * (item.quantity || 1);
+                subtotal += itemTotal;
+                return `
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="${item.image}" class="img-fluid rounded-start" alt="${item.name}">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">${item.name}</h5>
+                                    <p class="card-text">${item.description}</p>
+                                    <p class="card-text"><strong data-translate="Price">Price:</strong> ${item.price}</p>
+                                    <p class="card-text"><strong data-translate="Quantity">Quantity:</strong> ${item.quantity || 1}</p>
+                                    <p class="card-text"><strong data-translate="Total">Total:</strong> EGP ${itemTotal.toFixed(2)}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            // Add delivery fee
+            const deliveryFee = 30; // 30 EGP delivery fee
+            const total = subtotal + deliveryFee;
+
+            // Update the total price with delivery fee
+            orderSummaryContainer.innerHTML += `
+                <div class="order-summary-item">
+                    <p data-translate="Subtotal">Subtotal</p>
+                    <p>EGP ${subtotal.toFixed(2)}</p>
+                </div>
+                <div class="order-summary-item">
+                    <p data-translate="Delivery Fee">Delivery Fee</p>
+                    <p>EGP ${deliveryFee.toFixed(2)}</p>
+                </div>
+            `;
+
+            orderTotalElement.textContent = `EGP ${total.toFixed(2)}`;
+        }
+
+        // Function to populate the form with user data
+        function populateFormWithUserData() {
+            const loggedInUser = localStorage.getItem("loggedInUser");
+            if (loggedInUser) {
+                const user = JSON.parse(localStorage.getItem(loggedInUser));
+                if (user) {
+                    document.getElementById('fullName').value = `${user.firstName} ${user.lastName}` || '';
+                    document.getElementById('phone').value = user.mobileNumber || '';
+                    document.getElementById('address').value = user.address || '';
+                }
+            }
+        }
+
+        // Function to handle the "Place Order" button click
+        function handlePlaceOrder(event) {
+            event.preventDefault();
+
+            const loggedInUser = localStorage.getItem("loggedInUser");
+            if (!loggedInUser) {
+                alert('Please sign in to place an order.');
+                window.location.href = '../profile/profile.html';
+                return;
+            }
+
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            if (cart.length === 0) {
+                alert('Your cart is empty.');
+                return;
+            }
+
+            // Create the order object
+            const order = {
+                date: new Date().toLocaleString(),
+                items: cart,
+                total: `EGP ${parseFloat(document.getElementById('order-total').textContent.replace('EGP ', ''))}`,
+                address: document.getElementById('address').value,
+                paymentMethod: document.getElementById('paymentMethod').value,
+            };
+
+            // Save the order to the user's profile
+            const user = JSON.parse(localStorage.getItem(loggedInUser));
+            if (!user.orders) {
+                user.orders = [];
+            }
+            user.orders.push(order);
+            localStorage.setItem(loggedInUser, JSON.stringify(user));
+
+            // Clear the cart
+            localStorage.removeItem('cart');
+
+            // Show success toast
+            showToast('Order placed successfully!');
+
+            // Redirect to the profile page after 3 seconds
+            setTimeout(() => {
+                window.location.href = '../profile/profile.html';
+            }, 3000);
+        }
+
+        // Function to show a toast notification
+        function showToast(message) {
+            const toastElement = document.getElementById('toast');
+            const toastMessage = document.getElementById('toast-message');
+
+            // Set the toast message
+            toastMessage.textContent = message;
+
+            // Initialize the toast (if not already initialized)
+            const toast = new bootstrap.Toast(toastElement, {
+                autohide: true, // Automatically hide the toast
+                delay: 3000 // Hide after 3 seconds
+            });
+
+            // Show the toast
+            toast.show();
+        }
+
+        // Display the order summary and populate the form when the page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            displayOrderSummary();
+            populateFormWithUserData();
+        });
+
+        // Attach the "Place Order" form submission handler
+        document.getElementById('deliveryDetailsForm').addEventListener('submit', handlePlaceOrder);
+    </script>
+</body>
+
+</html>

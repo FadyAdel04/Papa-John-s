@@ -1,0 +1,213 @@
+/* Auth Section Styling */
+.auth-section {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.auth-logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.auth-section h2 {
+  margin-bottom: 20px;
+  color: #d32f2f; /* Papa John's red */
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.auth-section input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.auth-section input:focus {
+  border-color: #d32f2f; /* Papa John's red */
+  outline: none;
+}
+
+.auth-section button {
+  width: 100%;
+  padding: 10px;
+  background-color: #388e3c; /* Papa John's red */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.auth-section button:hover {
+  background-color: #2e7d32; /* Darker red for hover */
+}
+
+.auth-section p {
+  margin-top: 15px;
+  color: #333;
+  font-size: 14px;
+}
+
+.auth-section a {
+  color: #388e3c; /* Papa John's green */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.auth-section a:hover {
+  text-decoration: underline;
+}
+
+/* Profile Section Styling */
+#profile-section {
+  max-width: 100%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#profile-section h2 {
+  color: #d32f2f; /* Papa John's red */
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#profile-section p {
+  font-size: 16px;
+  color: #333;
+  margin: 10px 0;
+}
+
+#profile-section button {
+  margin-top: 20px;
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#profile-section button:hover {
+  background-color: #d32f2f;
+}
+
+/* Update Address Section Styling */
+#update-address-section {
+  margin-top: 20px;
+}
+
+#update-address-section input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#update-address-section input:focus {
+  border-color: #d32f2f; /* Papa John's red */
+  outline: none;
+}
+
+#update-address-section button {
+  width: 100%;
+  padding: 10px;
+  background-color: #388e3c; /* Papa John's green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#update-address-section button:hover {
+  background-color: #2e7d32; /* Darker green for hover */
+}
+
+/* Last Orders Section Styling */
+#last-orders-section {
+  max-width: 100%;
+  padding: 20px;
+  margin-top: 50px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#last-orders-section h3 {
+  color: #d32f2f; /* Papa John's red */
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#last-orders {
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 10px; /* Add padding for scrollbar */
+}
+
+.order-card {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.order-card p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.order-card ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.order-card ul li {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .auth-section {
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  #profile-section,
+  #last-orders-section {
+    padding: 15px;
+  }
+
+  #last-orders {
+    max-height: 300px;
+  }
+}

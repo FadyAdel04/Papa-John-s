@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Papa John's</title>
+</head>
+
+<body>
+    <header>
+        <nav class="topnav">
+            <img src="imgs/number.png" alt="num">
+            <ul>
+                <li><a href="pages/qulaity.html" data-translate="CAREERS">CAREERS</a></li>
+                <li><a href="pages/customer.html" data-translate="CONTACTS">CONTACTS</a></li>
+            </ul>
+            <img src="imgs/arabic.png" alt="arabic" id="language-toggle">
+        </nav>
+        <nav class="subnav">
+            <a href="index.html">
+                <img src="imgs/logo.png" alt="logo" class="logo" id="main-logo">
+            </a>
+            <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
+            <ul id="menu">
+                <li><a href="#" data-translate="HOME">HOME</a></li>
+                <li class="dropdown">
+                    <a href="#" data-translate="Menu">Menu &#x25BC;</a>
+                    <ul class="submenu">
+                        <li><a href="pages/promotions.html" data-translate="PROMOTIONS">PROMOTIONS</a></li>
+                        <li><a href="pages/pizzas.html" data-translate="PIZZAS">PIZZAS</a></li>
+                        <li><a href="pages/appetizers.html" data-translate="APPETIZERS">APPETIZERS</a></li>
+                    </ul>
+                </li>
+                <li><a href="../pages/qulaity.html" data-translate="Quality">Quality</a></li>
+                <li><a href="../pages/customer.html" data-translate="Customer Service">Customer Service</a></li>
+            </ul>
+            <div class="icons">
+                <a href="pages/cart.html" class="cart-icon position-relative">
+                    <i class="fa-solid fa-cart-shopping fa-xl"></i>
+                    <span id="cart-count"
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+                        0 <!-- Default value -->
+                    </span>
+                </a>
+                <a href="profile/profile.html" class="profile-icon"><i class="fa-regular fa-user fa-xl"></i></a>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <!-- content -->
+    <div class="content">
+        <!-- Hero Section -->
+        <div class="container-fluid px-0"> <!-- Full width -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                </div>
+
+                <!-- Slides -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imgs/slide1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgs/slide2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgs/slide3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgs/slide4.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgs/slide5.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden" data-translate="Previous">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden" data-translate="Next">Next</span>
+                </button>
+            </div>
+        </div>
+        <br>
+        <!-- Cards Section -->
+        <div class="container my-4">
+            <div class="row g-4"> <!-- Bootstrap gutter spacing for better layout -->
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="imgs/card1.jpg" class="card-img-top" alt="menu">
+                        <div class="card-body text-center">
+                            <a href="pages/pizzas.html" class="btn" data-translate="View Our Menu">View Our Menu</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="imgs/card2.jpg" class="card-img-top" alt="menu">
+                        <div class="card-body text-center">
+                            <a href="#" class="btn" data-translate="View Our Branches">View Our Branches</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="imgs/card3.jpg" class="card-img-top" alt="menu">
+                        <div class="card-body text-center">
+                            <a href="pages/qulaity.html" class="btn" data-translate="View Our Quality">View Our
+                                Quality</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="imgs/card4.jpg" class="card-img-top" alt="menu">
+                        <div class="card-body text-center">
+                            <a href="pages/customer.html" class="btn" data-translate="View Customer Service">View
+                                Customer Service</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Banner -->
+        <div class="container-fluid text-white py-5"
+            style="background-image: url(../imgs/banner.jpg); background-size: cover; background-position: center;">
+            <div class="container text-center">
+                <h2 data-translate="Order Now and Enjoy Delicious Pizzas!">Order Now and Enjoy Delicious Pizzas!</h2>
+                <p class="mb-4" data-translate="Get your favorite pizzas delivered to your doorstep.">Get your favorite
+                    pizzas delivered to your doorstep.</p>
+                <a href="pages/pizzas.html" class="btn btn-lg" style="background-color: #079469; color: #fff;"
+                    data-translate="Order Now">Order Now</a>
+            </div>
+        </div>
+
+        <!-- Branches Map Section -->
+        <div class="container my-5">
+            <h2 class="text-center mb-4" data-translate="Find Us Near You">Find Us Near You</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.764072123456!2d29.9762934!3d31.2546524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5daa13fffffff%3A0xbdbedff13f67f30!2z2KfZhNiv2YrYqNmK2Kkg2KfZhNiv2YrYqNmK2KkgSm9uZXM!5e0!3m2!1sen!2seg!4v1698765432100!5m2!1sen!2seg"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+    </div>
+    <!-- footer -->
+    <footer class="footer text-white text-center py-4">
+        <div class="container">
+            <!-- Top Navigation Links -->
+            <div class="row">
+                <div class="col-12">
+                    <ul class="footer-links list-inline">
+                        <li class="list-inline-item"><a href="pages/promotions.html"
+                                data-translate="PROMOTIONS">PROMOTIONS</a></li>
+                        <li class="list-inline-item"><a href="pages/pizzas.html" data-translate="PIZZAS">PIZZAS</a></li>
+                        <li class="list-inline-item"><a href="pages/appetizers.html"
+                                data-translate="APPETIZERS">APPETIZERS</a></li>
+                    </ul>
+                    <ul class="footer-links list-inline">
+                        <li class="list-inline-item"><a href="index.html" data-translate="HOME">HOME</a></li>
+                        <li class="list-inline-item"><a href="pages/qulaity.html" data-translate="QUALITY">QUALITY</a>
+                        </li>
+                        <li class="list-inline-item"><a href="#" data-translate="BRANCHES">BRANCHES</a></li>
+                        <li class="list-inline-item"><a href="#" data-translate="CAREERS">CAREERS</a></li>
+                        <li class="list-inline-item"><a href="pages/customer.html"
+                                data-translate="CUSTOMER SERVICE">CUSTOMER SERVICE</a></li>
+                        <li class="list-inline-item"><a href="pages/customer.html"
+                                data-translate="CONTACTS">CONTACTS</a></li>
+                        <li class="list-inline-item"><a href="pages/customer.html"
+                                data-translate="PRIVACY POLICY">PRIVACY POLICY</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Social Media Icons -->
+            <div class="social-icons my-3">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <!-- Copyright and Development Credit -->
+            <div class="footer-text">
+                <p class="mb-1" data-translate="© 2025 Papa John's Egypt">© 2025 Papa John's Egypt</p>
+                <p data-translate="Web Development by">Web Development by
+                </p>
+                <a href="https://fadyadel-fady-adels-projects.vercel.app/" class="text-white">Fady Adel</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<!-- bootstrap links -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<!-- FontAwesome for Icons -->
+<script src="https://kit.fontawesome.com/858c0c4340.js" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const languageToggle = document.getElementById('language-toggle');
+        const mainLogo = document.getElementById('main-logo');
+        let currentLanguage = 'en';
+
+        languageToggle.addEventListener('click', function () {
+            currentLanguage = currentLanguage === 'en' ? 'ar' : 'en';
+            fetch('../data/translate.json')
+                .then(response => response.json())
+                .then(translations => {
+                    const langData = translations[currentLanguage];
+                    document.querySelectorAll('[data-translate]').forEach(element => {
+                        const key = element.getAttribute('data-translate');
+                        if (langData[key]) {
+                            element.textContent = langData[key];
+                        }
+                    });
+
+                    // Toggle the language toggle image
+                    if (currentLanguage === 'ar') {
+                        languageToggle.src = 'imgs/english.png';
+                        mainLogo.src = 'imgs/logo-ar.png';
+                    } else {
+                        languageToggle.src = 'imgs/arabic.png';
+                        mainLogo.src = 'imgs/logo.png';
+                    }
+
+                    // Update the direction of the body for RTL support
+                    document.body.setAttribute('dir', currentLanguage === 'ar' ? 'rtl' : 'ltr');
+                });
+        });
+    });
+</script>
+
+</html>

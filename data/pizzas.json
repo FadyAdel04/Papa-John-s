@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Margherita",
+    "description": "Mozzarella Cheese and Pizza Sauce which includes grilled chicken, basil pesto, freshly sliced Roma tomatoes,",
+    "price": "EGP 102 (Small), EGP 165 (Medium), EGP 243 (Large)",
+    "image": "https://www.papajohnsegypt.com/images/Products/Margherita.jpg"
+  },
+  {
+    "name": "6 Cheese",
+    "description": "A blend of 6 delicious cheeses (Gouda, Cheddar, Emmental, Romano, Mozzarella, Edam)",
+    "price": "EGP 187 (Small), EGP 250 (Medium), EGP 328 (Large)",
+    "image": "https://www.papajohnsegypt.com/images/Products/6-Cheese.jpg"
+  },
+  {
+    "name": "3 Cheese X 2 Toppings",
+    "description": "A blend of 3 delicious cheeses with 2 toppings of your choice (veggie, meat, or chicken)",
+    "price": "EGP 187 (Small), EGP 250 (Medium), EGP 328 (Large)",
+    "image": "https://www.papajohnsegypt.com/images/Products/3-Cheese-2-Toppings.jpg"
+  },
+  {
+    "name": "Super Papa's",
+    "description": "Pepperoni, Italian Sausage, Smoked Veal, Onions, Green Pepper, Fresh Mushroom, Black Olives",
+    "price": "EGP 157 (Small), EGP 220 (Medium), EGP 298 (Large)",
+    "image": "https://www.papajohnsegypt.com/images/Products/Super-Papa.jpg"
+  },
+  {
+    "name": "Little Italy",
+    "description": "Pepperoni, Italian Sausage, Fresh Mushroom, Black Olives, Oregano",
+    "price": "EGP 157 (Small), EGP 220 (Medium), EGP 298 (Large)",
+    "image": "https://www.papajohnsegypt.com/images/Products/Little-Italy.jpg"
+  },
+  {
+    "name": "Pepperoni",
+    "description": "Loaded with Pepperoni and Extra Mozzarella Cheese",
+    "price": "EGP 157 (Small), EGP 220 (Medium), EGP 298 (Large)",
+    "image": "https://www.papajohnsegypt.com/images/Products/Pepperoni.jpg"
+  },
+  {
+    "name": "Hot & Spicy",
+    "description": "Italian Sausage, Tomato, Onions, Green Pepper, Jalapeno",
+    "price": "EGP 157 (Small), EGP 220 (Medium), EGP 298 (Large)",
+    "image": "https://www.papajohnsegypt.com/images/Products/Hot-Spicy.jpg"
+  },
+  {
+    "name": "Cheese Burger",
+    "description": "Italian Sausage, Tomato, Onion, Mozzarella Cheese with Burger Sauce",
+    "price": "EGP 157 (Small), EGP 220 (Medium), EGP 298 (Large)",
+    "image": "https://www.papajohnsegypt.com/images/Products/cheese-burger.jpg"
+  },
+  {
+    "name": "Chicken BBQ",
+    "description": "Grilled Chicken, Onions, Fresh Mushroom, BBQ Sauce",
+    "price": "EGP 157 (Small), EGP 220 (Medium), EGP 298 (Large)",
+    "image": "https://www.papajohnsegypt.com/images/Products/Chicken-BBQ.jpg"
+  },
+  {
+    "name": "Chicken Super Papa's",
+    "description": "Grilled Chicken, Chicken Sausage, Chicken Pepperoni, Onions",
+    "price": "EGP 157 (Small), EGP 220 (Medium), EGP 298 (Large)",
+    "image": "https://www.papajohnsegypt.com/images/Products/Chicken-Super-Papa.jpg"
+  },
+  {
+    "name": "Ranch Chicken Super Papa",
+    "description": "Grilled Chicken, Chicken Sausage, Chicken Pepperoni, Fresh Mushroom",
+    "price": "EGP 157 (Small), EGP 220 (Medium), EGP 298 (Large)",
+    "image": "https://www.papajohnsegypt.com/images/Products/Ranch-Chicken-Super-Papa-WS.jpg"
+  },
+  {
+    "name": "Mexican Ole",
+    "description": "Grilled Chicken, Tomato, Onions, Green Pepper, Fresh Mushroom, Jalapeno",
+    "price": "EGP 157 (Small), EGP 220 (Medium), EGP 298 (Large)",
+    "image": "https://www.papajohnsegypt.com/images/Products/Mexican-Ole.jpg"
+  },
+  {
+    "name": "Cha Cha",
+    "description": "Grilled Chicken, Chicken Sausage, Onions, Green Pepper",
+    "price": "EGP 157 (Small), EGP 220 (Medium), EGP 298 (Large)",
+    "image": "https://www.papajohnsegypt.com/images/Products/Cha-Cha.jpg"
+  },
+  {
+    "name": "Chicken Ranch",
+    "description": "Grilled Chicken, Tomato, Fresh Mushroom, Jalapeno, Ranch Sauce",
+    "price": "EGP 187 (Small), EGP 250 (Medium), EGP 328 (Large)",
+    "image": "https://www.papajohnsegypt.com/images/Products/Chicken-Ranch.jpg"
+  },
+  {
+    "name": "Spanish Ranch Twist",
+    "description": "Ranch Sauce, Grilled Chicken, Chicken Sausage, Onion, Green Pepper, Cheese",
+    "price": "EGP 187 (Small), EGP 250 (Medium), EGP 328 (Large)",
+    "image": "https://www.papajohnsegypt.com/images/Products/spanish-ranch-twist-WS.jpg"
+  },
+  {
+    "name": "Smoky Ranch",
+    "description": "Smoky Cheese, Grilled Chicken, Chicken Sausage, Onions, Green Peppers",
+    "price": "EGP 187 (Small), EGP 250 (Medium), EGP 328 (Large)",
+    "image": "https://www.papajohnsegypt.com/images/Products/Smoky-Ranch.jpg"
+  },
+  {
+    "name": "Spicy Pepperoni Ranch",
+    "description": "Pepperoni, Jalapeno, Mozzarella Cheese and Ranch Sauce",
+    "price": "EGP 187 (Small), EGP 250 (Medium), EGP 328 (Large)",
+    "image": "https://www.papajohnsegypt.com/images/Products/Spicy-Pepperoni-Ranch-Pizza.jpg"
+  },
+  {
+    "name": "Buffalo Poppers",
+    "description": "Chicken Poppers, Onions, Jalapeno Pepper, Ranch Sauce with Buffalo Sauce",
+    "price": "EGP 187 (Small), EGP 250 (Medium), EGP 343 (Large)",
+    "image": "https://www.papajohnsegypt.com/images/Products/Buffalo-Poppers-Pizza.jpg"
+  },
+  {
+    "name": "BBQ Poppers",
+    "description": "Chicken Poppers, Onions, Ranch Sauce with BBQ Sauce Drizzled on top",
+    "price": "EGP 187 (Small), EGP 250 (Medium), EGP 343 (Large)",
+    "image": "https://www.papajohnsegypt.com/images/Products/BBQ-Poppers-Pizza.jpg"
+  },
+  {
+    "name": "Ranch Chicken Poppers",
+    "description": "Chicken Poppers, Onions, Jalapeño Pepper, Mozzarella Cheese with Ranch",
+    "price": "EGP 187 (Small), EGP 250 (Medium), EGP 343 (Large)",
+    "image": "https://www.papajohnsegypt.com/images/Products/Ranch-Chicken-Poppers-WS-jpg"
+  },
+  {
+    "name": "Smoky",
+    "description": "Smoked Veal, Smoked Cheese, Onions, Gouda Cheese, Cheddar Cheese",
+    "price": "EGP 187 (Small), EGP 250 (Medium), EGP 343 (Large)",
+    "image": "https://www.papajohnsegypt.com/images/Products/Smoky.jpg"
+  },
+  {
+    "name": "Shrimps",
+    "description": "Shrimps, Tomato, Onions, Green Pepper, Cheddar Cheese",
+    "price": "EGP 197 (Small), EGP 270 (Medium), EGP 368 (Large)",
+    "image": "https://www.papajohnsegypt.com/images/Products/Shrimps.jpg"
+  },
+  {
+    "name": "Shrimp Ranch",
+    "description": "Shrimps, Tomato, Onions, Green Pepper, Ranch Sauce",
+    "price": "EGP 197 (Small), EGP 270 (Medium), EGP 368 (Large)",
+    "image": "https://www.papajohnsegypt.com/images/Products/Shrimp-Ranch-WS.jpg"
+  },
+  {
+    "name": "Garden Special",
+    "description": "Tomato, Onions, Green Pepper, Fresh Mushroom, Black Olives",
+    "price": "EGP 157 (Small), EGP 220 (Medium), EGP 298 (Large)",
+    "image": "https://www.papajohnsegypt.com/images/Products/Garden-Special.jpg"
+  }
+]

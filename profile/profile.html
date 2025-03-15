@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papa John's | Signup</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/auth.css">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="topnav">
+            <img src="../imgs/number.png" alt="num">
+            <ul>
+                <li><a href="#">CAREERS</a></li>
+                <li><a href="../pages/customer.html">CONTACTS</a></li>
+            </ul>
+            <img src="../imgs/arabic.png" alt="arabic">
+        </nav>
+        <nav class="subnav">
+            <a href="../index.html">
+                <img src="../imgs/logo.png" alt="logo" class="logo">
+            </a>
+            <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
+            <ul id="menu">
+                <li><a href="../index.html">HOME</a></li>
+                <li class="dropdown">
+                    <a href="#">Menu &#x25BC;</a>
+                    <ul class="submenu">
+                        <li><a href="../pages/promotions.html">PROMOTIONS</a></li>
+                        <li><a href="../pages/pizzas.html">PIZZAS</a></li>
+                        <li><a href="../pages/appetizers.html">APPETIZERS</a></li>
+                    </ul>
+                </li>
+                <li><a href="../pages/qulaity.html">Quality</a></li>
+                <li><a href="../pages/customer.html">Customer Service</a></li>
+            </ul>
+            <div class="icons">
+                <a href="../pages/cart.html" class="cart-icon position-relative">
+                    <i class="fa-solid fa-cart-shopping fa-xl"></i>
+                    <span id="cart-count"
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+                        0 <!-- Default value -->
+                    </span>
+                </a>
+                <a href="profile.html" class="profile-icon"><i class="fa-regular fa-user fa-xl"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sign Up Section -->
+    <section id="signup-section" class="auth-section">
+        <img src="../imgs/logo2.png" alt="Papa John's Logo" class="auth-logo">
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+            <input type="text" id="first-name" placeholder="First Name" required>
+            <input type="text" id="last-name" placeholder="Last Name" required>
+            <input type="tel" id="mobile-number" placeholder="Mobile Number" required>
+            <input type="text" id="address" placeholder="Address" required>
+            <input type="password" id="signup-password" placeholder="Password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="#" onclick="showSignIn()">Sign In</a></p>
+    </section>
+
+    <!-- Sign In Section -->
+    <section id="signin-section" class="auth-section" style="display: none;">
+        <img src="../imgs/logo2.png" alt="Papa John's Logo" class="auth-logo">
+        <h2>Sign In</h2>
+        <form id="signin-form">
+            <input type="tel" id="signin-mobile" placeholder="Mobile Number" required>
+            <input type="password" id="signin-password" placeholder="Password" required>
+            <button type="submit">Sign In</button>
+        </form>
+        <p>Don't have an account? <a href="#" onclick="showSignUp()">Sign Up</a></p>
+    </section>
+
+    <!-- Profile Section -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <section id="profile-section" class="auth-section">
+                    <img src="../imgs/logo2.png" alt="Papa John's Logo" class="auth-logo">
+                    <h2>Profile</h2>
+                    <p>Welcome, <span id="profile-name"></span>!</p>
+                    <p>Mobile: <span id="profile-mobile"></span></p>
+                    <p>Address: <span id="profile-address"></span></p>
+
+                    <!-- Add this for updating the address -->
+                    <div id="update-address-section" class="mb-3">
+                        <input type="text" id="new-address" class="form-control mb-2" placeholder="Enter new address">
+                        <button class="btn btn-primary" onclick="updateAddress()">Update Address</button>
+                    </div>
+                    <button class="btn btn-danger" onclick="logout()">Logout</button>
+                </section>
+            </div>
+            <div class="col-md-6">
+                <!-- Last Orders Section -->
+                <div id="last-orders-section">
+                    <h3>Last Orders</h3>
+                    <div id="last-orders">
+                        <!-- Orders will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer text-white text-center py-4">
+        <div class="container">
+            <!-- Top Navigation Links -->
+            <div class="row">
+                <div class="col-12">
+                    <ul class="footer-links list-inline">
+                        <li class="list-inline-item"><a href="pages/promotions.html">PROMOTIONS</a></li>
+                        <li class="list-inline-item"><a href="pages/pizzas.html">PIZZAS</a></li>
+                        <li class="list-inline-item"><a href="pages/appetizers.html">APPETIZERS</a></li>
+                    </ul>
+                    <ul class="footer-links list-inline">
+                        <li class="list-inline-item"><a href="index.html">HOME</a></li>
+                        <li class="list-inline-item"><a href="pages/qulaity.html">QUALITY</a></li>
+                        <li class="list-inline-item"><a href="#">BRANCHES</a></li>
+                        <li class="list-inline-item"><a href="#">CAREERS</a></li>
+                        <li class="list-inline-item"><a href="pages/customer.html">CUSTOMER SERVICE</a></li>
+                        <li class="list-inline-item"><a href="pages/customer.html">CONTACTS</a></li>
+                        <li class="list-inline-item"><a href="pages/customer.html">PRIVACY POLICY</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Social Media Icons -->
+            <div class="social-icons my-3">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <!-- Copyright and Development Credit -->
+            <div class="footer-text">
+                <p class="mb-1">© 2025 Papa John's Egypt</p>
+                <p>Web Development by <a href="https://fadyadel-fady-adels-projects.vercel.app/" class="text-white">Fady
+                        Adel</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+<!-- bootstrap links -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<!-- FontAwesome for Icons -->
+<script src="https://kit.fontawesome.com/858c0c4340.js" crossorigin="anonymous"></script>
+<script src="../app.js"></script>
+<script src="auth.js"></script>
+
+</html>

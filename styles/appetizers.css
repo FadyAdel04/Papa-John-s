@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Card Styles */
+.card {
+    height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ab131b;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Price Buttons */
+.price-buttons {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    padding: 0.5rem 0;
+}
+
+.price-buttons .btn {
+    flex: 1;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    background-color: #ab131b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.price-buttons .btn:hover {
+    background-color: #880f15;
+}
+
+
+.order-now-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+/* Order Now Button */
+.order-now-container .order-now-button {
+    flex: 1;
+    text-align: center;
+    background-color: #ffc107;
+    color: #000;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.order-now-container .order-now-button:hover {
+    background-color: #e0a800;
+    color: #000;
+    text-decoration: none;
+}
+
+/* Add to Cart Button */
+.order-now-container .add-to-cart-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ab131b;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.order-now-container .add-to-cart-button:hover {
+    background-color: #880f15;
+}
+
+.order-now-container .add-to-cart-button i {
+    font-size: 1.2rem;
+}
+
+/* Responsive Grid */
+@media (max-width: 1200px) {
+    .col-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
