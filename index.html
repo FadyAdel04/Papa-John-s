@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/logo2.png" type="image/x-icon">
     <!-- css link -->
     <link rel="stylesheet" href="style.css">
     <!-- bootstrap links -->
@@ -152,7 +153,7 @@
 
         <!-- CTA Banner -->
         <div class="container-fluid text-white py-5"
-            style="background-image: url(../imgs/banner.jpg); background-size: cover; background-position: center;">
+            style="background-image: url(imgs/banner.jpg); background-size: cover; background-position: center;">
             <div class="container text-center">
                 <h2 data-translate="Order Now and Enjoy Delicious Pizzas!">Order Now and Enjoy Delicious Pizzas!</h2>
                 <p class="mb-4" data-translate="Get your favorite pizzas delivered to your doorstep.">Get your favorite
@@ -233,7 +234,7 @@
 
         languageToggle.addEventListener('click', function () {
             currentLanguage = currentLanguage === 'en' ? 'ar' : 'en';
-            fetch('../data/translate.json')
+            fetch('data/translate.json')
                 .then(response => response.json())
                 .then(translations => {
                     const langData = translations[currentLanguage];
