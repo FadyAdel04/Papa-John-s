@@ -9,9 +9,8 @@ window.onload = function () {
       document.getElementById("profile-mobile").textContent = user.mobileNumber;
       document.getElementById("profile-address").textContent = user.address;
       showProfile();
-      displayProfile(); // Call the function to display profile data and last orders
+      displayProfile(); 
   } else {
-      // If no user is logged in, show the sign-in section
       showSignIn();
   }
 };
@@ -21,7 +20,7 @@ function showSignUp() {
   document.getElementById("signup-section").style.display = "block";
   document.getElementById("signin-section").style.display = "none";
   document.getElementById("profile-section").style.display = "none";
-  document.getElementById("last-orders-section").style.display = "none"; // Hide last orders section
+  document.getElementById("last-orders-section").style.display = "none"; 
 }
 
 // Show Sign In Section
@@ -29,7 +28,7 @@ function showSignIn() {
   document.getElementById("signin-section").style.display = "block";
   document.getElementById("signup-section").style.display = "none";
   document.getElementById("profile-section").style.display = "none";
-  document.getElementById("last-orders-section").style.display = "none"; // Hide last orders section
+  document.getElementById("last-orders-section").style.display = "none"; 
 }
 
 // Show Profile Section
@@ -37,7 +36,7 @@ function showProfile() {
   document.getElementById("profile-section").style.display = "block";
   document.getElementById("signup-section").style.display = "none";
   document.getElementById("signin-section").style.display = "none";
-  document.getElementById("last-orders-section").style.display = "block"; // Show last orders section
+  document.getElementById("last-orders-section").style.display = "block";
 }
 
 // Function to display profile data and last orders
@@ -73,7 +72,6 @@ function displayProfile() {
           }
       }
   } else {
-      // Hide the last orders section if no user is logged in
       document.getElementById("last-orders-section").style.display = "none";
   }
 }
